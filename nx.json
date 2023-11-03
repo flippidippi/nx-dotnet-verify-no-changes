@@ -1,4 +1,9 @@
 {
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
@@ -18,5 +23,7 @@
       "cache": true
     }
   },
-  "nxCloudAccessToken": "YmExYWE2NWEtNmY1NC00NmI3LWI1ZjAtYjFkNjNmY2JmMmMyfHJlYWQtd3JpdGU="
+  "plugins": [
+    "@nx-dotnet/core"
+  ]
 }
